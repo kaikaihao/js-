@@ -1,4 +1,4 @@
-var arr = [10,20,8,9,3,2,1,2,2,2,8]
+
 			function superSort(arr){
 				for(var i = 0; i<arr.length ; i++){
 					for(let j = 0;j<arr.length-i-1;j++){
@@ -19,5 +19,4 @@ var arr = [10,20,8,9,3,2,1,2,2,2,8]
 				}
 				}
 			}
-			// superSort(arr)
-			// alert(arr)
+			
