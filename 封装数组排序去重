@@ -1,0 +1,23 @@
+var arr = [10,20,8,9,3,2,1,2,2,2,8]
+			function superSort(arr){
+				for(var i = 0; i<arr.length ; i++){
+					for(let j = 0;j<arr.length-i-1;j++){
+						if(arr[j]>arr[j+1]){
+							let tmp = arr[j];
+							arr[j]=arr[j+1];
+							arr[j+1] = tmp
+						}
+						
+					}
+				for(let k = 0 ;k<arr.length;k++){
+					for(var a = 1+k;a<arr.length;a++){
+						if(arr[a] == arr[k]){
+							arr.splice(k,1);
+							a--;
+						}
+					}
+				}
+				}
+			}
+			// superSort(arr)
+			// alert(arr)
